@@ -1,0 +1,3 @@
+index=weblogs1 method=GET
+| stats sum(bytes) as total_bytes by client_ip
+| where total_bytes > 5000000

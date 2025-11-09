@@ -1,0 +1,12 @@
+📸 Screenshot #1 – Sample Apache log file (notepad view)
+📸 Screenshot #2 – Logs successfully ingested into Splunk (index=weblogs1)
+📸 Screenshot #3 – Local Windows Event Logs added
+📸 Screenshot #4 – Field extraction showing client_ip, method, uri, status, bytes
+📸 Screenshot #5 – Brute force query results (401 errors by client_ip)
+📸 Screenshot #6 – Alert setup for brute-force detection
+📸 Screenshot #7 – Data exfiltration SPL (no results as expected)
+📸 Screenshot #8 – Saved reports and search queries
+📸 Screenshot #9 – Dashboard panels showing event data and alerts
+📸 Screenshot #9a – Full dashboard view (split into two images)
+📸 Screenshot #10 – MITRE mapping CSV created
+📸 Screenshot #11 – Final SplunkMiniSOC project folder

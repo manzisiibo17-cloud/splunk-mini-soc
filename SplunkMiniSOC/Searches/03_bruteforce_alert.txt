@@ -1,0 +1,5 @@
+index=weblogs1 status=401
+| stats count by client_ip
+| where count > 5
+
+Saved as scheduled alert “Brute Force Alert” (runs every 5 minutes).

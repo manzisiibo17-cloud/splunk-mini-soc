@@ -1,0 +1,14 @@
+# Panel 1 – Total Events
+index=weblogs1 | stats count as TotalEvents
+
+# Panel 2 – Top 10 Source IPs
+index=weblogs1 | top client_ip limit=10
+
+# Panel 3 – Brute Force Attempts Over Time
+index=weblogs1 status=401 | timechart span=10m count
+
+# Panel 4 – Data Exfil by IP
+index=weblogs1 method=GET | stats sum(bytes) as total_bytes by client_ip
+
+# Panel 5 – Triggered Alerts
+| rest /servicesNS/-/-/alerts/fired_alerts | table title, triggered_time
